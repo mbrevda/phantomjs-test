@@ -1,0 +1,17 @@
+{
+  "name": "phantomjs-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "should": "^3.2.0",
+    "mocha": "^1.18.2",
+    "webdriverjs": "^1.5.1",
+    "phantomjs": "^1.9.7-3"
+  }
+}
