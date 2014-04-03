@@ -1,4 +1,5 @@
-var wd = require('webdriverjs')
+var wd = require('webdriverjs'),
+    path = require('path')
 
 var client;
 
@@ -18,9 +19,11 @@ client = wd.remote({
 client = wd.remote({
    desiredCapabilities: {
        browserName: 'phantomjs',
-       screenResolution: "1024x768"
+      'phantomjs.binary.path': require('phantomjs').path,
+       screenResolution: '1024x768'
    },
    //logLevel: 'verbose'
+   port: process.env.SELENIUM_PORT
 });
 
 

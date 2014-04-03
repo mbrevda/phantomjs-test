@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "should": "^3.2.0",
     "mocha": "^1.18.2",
     "webdriverjs": "^1.5.1",
-    "phantomjs": "^1.9.7-3"
+    "phantomjs": "^1.9.7-3",
+    "selenium-launcher": "^1.1.10"
   }
 }
