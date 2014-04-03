@@ -9,7 +9,10 @@ This package is a demo of a fully contained client side test using the following
  * Webdriver.io
  * Mocha
 
-This project should be OS independent, but some more testing wouldnt hurt. Pull requests welcome!
+This project should be OS independent, but some more testing wouldn't hurt. The
+idea is to be able to install the fill testing suite with just a single command
+(i.e. ```npm install```). Its not dependcy-less per se, but it doesn't require
+upkeep of anything out of npm. Pull requests welcome!
 
 
 Install
