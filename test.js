@@ -1,7 +1,6 @@
 var should = require('should')
 
 describe('Running tests...', function(){
-    this.timeout(15 * 1000)
     var client = {}
 
     before(function(done){
@@ -21,8 +20,8 @@ describe('Running tests...', function(){
     })
 
 
-    describe('Trying a google search', function(done){
-        it('should search Google', function(done){
+    describe('Google', function(done){
+        it('should search', function(done){
             client
                 .url('http://www.google.com/ncr')
                 .setValue('[name=q]', 'WebdriveJS')
@@ -34,7 +33,7 @@ describe('Running tests...', function(){
         })
     })
 
-    describe('Test Bing', function(done){
+    describe('Bing', function(done){
         it('should\'t have any cookies that arent from bing', function(done){
             client
                 .url('http://www.bing.com')

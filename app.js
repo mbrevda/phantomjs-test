@@ -3,7 +3,9 @@ var Mocha = require('mocha'),
     path = require('path')
 
 var mocha = new Mocha({
-    'reporter': 'spec'
+    reporter: 'spec',
+    slow: 2.5 * 1000,
+    timeout: 15 * 1000
 }).addFile('test.js')
 
 //process.env.PATH += ':' + path.dirname(require('phantomjs').path)
